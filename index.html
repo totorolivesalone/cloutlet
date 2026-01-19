@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.9/dist/lenis.min.js"></script>
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon"/>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <!-- Logo as PNG -->
+        <a href="#" class="nav-logo">
+            <img src="/assets/logo.png" alt="Cloutlet" class="logo-img">
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="nav-links">
+            <a href="#services" class="mobile-link">Services</a>
+        <a href="#benchmarks" class="mobile-link">Results</a>
+        <a href="#values" class="mobile-link">Values</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+        
+        <!-- CTA Button -->
+        <a href="#contact" class="nav-cta">Get Started</a>
+        
+        <!-- Mobile Menu Button -->
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span class="hamburger"></span>
+        </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="nav-mobile">
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#benchmarks" class="mobile-link">Results</a>
+        <a href="#values" class="mobile-link">Values</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="#contact" class="mobile-cta">Get Started</a>
+    </div>
+</nav>
+    <section class="hero">
+        <canvas id="gradient-canvas">
+        </canvas>
+        <h1 class="hero-title">
+            ✦Cloutix Media✦
+        </h1>
+
+    </section>
+    <section class="tagline">
+        <div class="tagline-text"><h2>Your brand's marketing media agency</h2></div>
+    </section>
+    <section class="services-header">
+        <div class="services-header-text"><h2>Our Services</h2></div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="row">
+            <div class="img"><img src="/assets/camera.png" /></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h2>Social Media Marketing</h2>
+                    <p> Elevate your brand's digital presence with strategic social media management. 
+                        We craft compelling Instagram stories, viral-worthy reels, and engaging LinkedIn 
+                        content that resonates with your target audience. From consistent brand storytelling 
+                        to community engagement, we transform followers into loyal customers.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="img"><img src="/assets/social.png" /></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h2>Performance Marketing</h2>
+                    <p>Reach customers directly where they chat. We set up WhatsApp and social media 
+                        ad campaigns that connect your business with interested buyers. No confusing 
+                        metrics—just clear outreach that drives conversations and sales.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="img"><img src="/assets/marketing.png" /></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h2>Website Designing</h2>
+                    <p>Custom web solutions that scale with your business. Using cutting-edge 
+                        technologies and responsive frameworks, we craft websites that look stunning 
+                        on any device while maintaining optimal performance and SEO readiness.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="img"><img src="/assets/website.png" /></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img"><img src="/assets/pictures.png" /></div>
+        </div>
+        <div class="svg-path">
+       <svg width="75" height="130" viewBox="0 0 75 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="stroke-path" d="M48.6676 3.50048C48.6676 3.50048 -10.8324 12.5005 14.6676 19.0005C40.1676 25.5005 64.6676 19.0005 63.6676 28.5005C62.6676 38.0005 -3.83239 82.5005 4.16761 50.5005C12.1676 18.5005 77.6081 67.0696 70.6676 69.5005C63.7271 71.9313 1.66761 74.0005 11.1676 90.0005C20.6676 106 63.6676 95.0005 67.6676 106C71.6676 117 24.1676 126.5 24.1676 126.5" stroke="#ff0000" stroke-width="7" stroke-linecap="round"/>
+</svg>
+
+        </div>
+    </section>
+<section class="brands">
+    <div class="brands-title"><h2>Industries we dominate</h2></div>
+    <div class="marquee">
+    <div class="track">
+        <span>Hair & Beauty</span><span>Fashion</span><span>Nutrition</span>
+        <span>Education</span><span>Fitness</span><span>Coaching</span>
+    </div>
+</div>
+</section>
+<section class="benchmarks" id="benchmarks">
+    <div class="benchmark-card">
+        <h3>Performance Benchmarks</h3>
+        <div class="values">
+            <div class="value-item">
+                <div class="number">50M+</div>
+                <div class="label">Social Media Views</div>
+            </div>
+            <div class="value-item">
+                <div class="number">₹3M+</div>
+                <div class="label">Revenue Generated for brands</div>
+            </div>
+            <div class="value-item">
+                <div class="number">7+</div>
+                <div class="label">Industries Served</div>
+            </div>
+            <div class="value-item">
+                 <div class="number">2x</div>
+                <div class="label">Better ROI</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="company-values" id="values">
+    <div class="company-values-title">
+        <h2>Our Values </h2>
+
+    </div>
+    <div class="company-values-container">
+        <div class="company-value-item">
+            <div class="value-svg" id="svg-star">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"><path d="M450 210a169.3 169.3 0 0 0-130.6-49.4c2.9-46.9-13.6-94.8-49.4-130.6L240 0l-30 30a169.3 169.3 0 0 0-49.4 130.6C113.7 157.7 65.8 174.2 30 210L0 240l30 30a169.3 169.3 0 0 0 130.6 49.4c-2.9 46.9 13.6 94.8 49.4 130.6l30 30 30-30a169.3 169.3 0 0 0 49.4-130.6c46.9 2.9 94.8-13.6 130.6-49.4l30-30-30-30Z" fill="#ff0000"></path></svg>
+
+            </div>
+            <div class="value-desc">
+                <h3>Creative Precision</h3>
+            </div>
+
+        </div>
+        <div class="company-value-item">
+            <div class="value-svg" id="svg-square">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"><path d="m0 360 120-120 120 120-120 120zM0 120 120 0l120 120-120 120zM240 120 360 0l120 120-120 120zM240 360l120-120 120 120-120 120z" fill="#ff0000"></path></svg>
+            </div>
+            <div class="value-desc">
+                <h3>Partners, Not Vendors </h3>
+            </div>
+
+        </div>
+        <div class="company-value-item">
+            <div class="value-svg" id="svg-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"><path d="M480 240a240 240 0 0 0-240 240 240 240 0 0 0 240-240ZM240 0A240 240 0 0 0 0 240 240 240 0 0 0 240 0ZM480 240A240 240 0 0 0 240 0a240 240 0 0 0 240 240ZM240 480A240 240 0 0 0 0 240a240 240 0 0 0 240 240Z" fill="#ff0000"></path></svg>
+            </div>
+            <div class="value-desc">
+                <h3>Insight-Driven Creativity</h3>
+            </div>
+
+        </div>
+        <div class="company-value-item">
+            <div class="value-svg" id="svg-plus">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"><path d="M480 160H320V0H160v160H0v160h160v160h160V320h160V160z" fill="#ff0000"></path></svg>
+            </div>
+            <div class="value-desc">
+                <h3>Simplify to Amplify</h3>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <section class="contact" id="contact">
+        <h2 class="contact-title">Get in Touch</h2>
+        
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7850d6e8-c8d0-49f1-af6f-02f318a0923b">
+            
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3 class="footer-logo">✦Cloutix Media✦</h3>
+            <p class="footer-tagline">Your brand's marketing media agency</p>
+        </div>
+        
+        <div class="footer-contact">
+            <p class="footer-contact-item">📍 Mumbai, India</p>
+            <p class="footer-contact-item">📧 cloutixmedia@gmail.com</p>
+            <p class="footer-contact-item">📱 +91 7506677933</p>
+        </div>
+        
+        <div class="footer-links">
+            <a href="#services">Services</a>
+            <a href="#benchmarks">Benchmarks</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2026 Cloutix Media. All rights reserved.</p>
+        <p>Made with ✦ </p>
+    </div>
+</footer>
+
+   <script type="module" src="script2.js"></script>
+   <script  src="script.js"></script>
+
+
+    
+</body>
+</html>
